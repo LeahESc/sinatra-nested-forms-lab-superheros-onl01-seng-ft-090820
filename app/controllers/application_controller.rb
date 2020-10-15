@@ -12,6 +12,14 @@ class App < Sinatra::Base
         @params = params
         @team = params[:team][:name]
         @motto = params[:team][:motto]
+        # @hero_name = []
+        # @hero_power = []
+        # @hero_bio = []
+        # params[:team][:members][].each do |member|
+        #     @hero_name << member.name
+        #     @hero_power << member.power
+        #     @hero_bio <<  member.bio 
+        # end -- then iterate through the arrays for each member in the views file. 
         @hero1_name = params[:team][:members][0][:name]
         @hero1_power = params[:team][:members][0][:power]
         @hero1_bio = params[:team][:members][0][:bio]
